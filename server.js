@@ -28,7 +28,7 @@ function saveUsers() {
 
 // Email transporter (configure with your email service)
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'qq',
   auth: {
     user: process.env.GMAIL_EMAIL,
     pass: process.env.GMAIL_PASSWORD
