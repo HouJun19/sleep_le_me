@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>死了么 - 每日签到应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>死了么</h1>
+        <div id="register-form">
+            <h2>注册</h2>
+            <input type="email" id="email" placeholder="邮箱" required>
+            <input type="text" id="name" placeholder="姓名" required>
+            <button id="register-btn">注册</button>
+        </div>
+        <div id="checkin-section" style="display: none;">
+            <h2>每日签到</h2>
+            <button id="checkin-btn">签到</button>
+            <p id="message"></p>
+            <button id="account-btn" class="secondary-btn">查看账户</button>
+        </div>
+        <div id="account-section" style="display: none;">
+            <h2>账户信息</h2>
+            <div class="user-info">
+                <p id="user-name"></p>
+                <p id="user-email"></p>
+                <p id="total-checkins"></p>
+                <p id="streak-days"></p>
+            </div>
+            <div class="chart-container">
+                <canvas id="checkin-chart"></canvas>
+            </div>
+            <button id="back-btn" class="secondary-btn">返回签到</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
